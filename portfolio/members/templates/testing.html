@@ -1,15 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html>
+<link rel="stylesheet" href="{% static 'myglobal.css' %}">
 <body>
-    {% for x in fruits %}
-        <p>{{ x }}</p>
-    {% endfor %}
-    <p>In views.py you can see what the fruits variable looks like.</p>
+
+{% for x in fruits %}
+  <h1>{{ x }}</h1>
+{% endfor %}
 
 </body>
 </html>
